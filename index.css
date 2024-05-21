@@ -1,0 +1,19 @@
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(207, 205, 197);
+    color: rgb(48, 35, 20);
+    padding: 2rem;
+}
+
+aside {
+    display: inline-block;
+    padding-right: 1rem;
+}
+
+img {
+    width: 15rem;
+}
+
+section {
+    display: flex;
+}
