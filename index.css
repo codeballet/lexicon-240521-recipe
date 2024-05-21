@@ -5,13 +5,8 @@ body {
     padding: 1rem;
 }
 
-aside {
-    display: inline-block;
-    width: 40%;
-}
-
-aside ul {
-    padding-left: 1em;
+ul, ol {
+    padding: 0em 1em;
 }
 
 hr {
@@ -24,8 +19,11 @@ li {
 
 .flex-container {
     display: flex;
-    flex-flow: row wrap;
-    align-items: center;
+}
+
+section.flex-container {
+    flex-direction: column;
+    justify-content: center;
 }
 
 .image-large {
@@ -34,13 +32,13 @@ li {
 }
 
 .image-side {
-    max-width: 100%;
-    margin-left: 1em;
+    width: 70%;
 }
 
 footer.flex-container {
     display: flex;
     flex-flow: column nowrap;
+    align-items: center;
 }
 
 footer h3 {
@@ -50,4 +48,17 @@ footer h3 {
 
 footer p {
     margin: 0.2rem;
+}
+
+@media only screen and (min-width: 600px) {
+    section.flex-container {
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+
+    .image-side {
+        padding-left: 3rem;
+        min-width: 30%;
+        max-width: 60%;
+    }
 }
