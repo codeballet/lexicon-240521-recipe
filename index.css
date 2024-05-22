@@ -36,7 +36,6 @@ section.flex-container {
 }
 
 footer.flex-container {
-    display: flex;
     flex-flow: column nowrap;
     align-items: center;
 }
